@@ -1,0 +1,88 @@
+.dataTreebox{
+    width: 800px;
+    height: 600px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background: url(../img/quejiaobiankuang.png) center center no-repeat;
+    background-size: 100% 100%;
+    color: #fff;
+}
+.dataTreebox_head{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    border-bottom: 1px solid #fff;
+}
+.dataTreebox_center{
+    flex: 1;
+    overflow-x: hidden;
+    margin: 0px 0px 20px 0px;
+}
+    .dataTreebox_center_itemBox{
+        display: flex;
+        box-sizing: border-box;
+        padding: 0px 10px;
+    }
+        .dataTreebox_center_itemBox_L{
+            width: 130px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+            .dataTreebox_center_itemBox_L_line{
+                flex: 1;
+                border: 1px solid;
+                width: 0px;
+            }
+        .dataTreebox_center_itemBox_R{
+            flex: 1;
+            background: rgba(42,100,150,.76);
+            margin: 10px;
+            border-radius: 10px;
+        }
+            .dataTreebox_center_item_head{
+                display: flex;
+                box-sizing: border-box;
+                padding: 10px 20px;
+                flex-direction: column;
+            }
+            .dataTreebox_center_item_center{
+                display: flex;
+                background: rgba(72,125,191,.46);
+                border-radius: 5px;
+                box-sizing: border-box;
+                padding: 10px;
+                margin: 0px 20px;
+                font-size: 14px;
+            }
+            .dataTreebox_center_item_foot{
+                box-sizing: border-box;
+                padding:10px 20px
+            }
+                /* .dataTreebox_center_item_foot_Lsp{
+                    position: relative;
+                    left: 0;
+                }
+                .dataTreebox_center_item_foot_Rsp{
+                    position: relative;
+                    right: 0;
+                } */
+.dataTreebox_foot{
+    display: none;
+}
+.dataTreebox_centerflex_betweeb{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.dataTreebox_centerflex_end{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.dataTreebox_centerTwosp{
+    display: flex;font-size: 12px;align-items: center;height: 20px;
+}

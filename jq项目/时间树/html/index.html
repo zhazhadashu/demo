@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="../css/dataTree.css">
+</head>
+<body>
+    <div class="dataTreebox">
+        <div class="dataTreebox_head">
+            <span>详情</span>
+        </div>
+        <div id="dataTreebox_centerID" class="dataTreebox_center"></div>
+        <div class="dataTreebox_foot"></div>
+    </div>
+
+    <script>
+        var dataTreeData = [
+            {
+                name:"开工报告",
+                url:"sadasdasdas",
+                TJdata:"2021/5/20",
+                JYdata:"2021/5/20/14:00"
+            },{
+                name:"开工报告",
+                url:"sadasdasdas",
+                TJdata:"2021/5/20",
+                JYdata:"2021/5/20/14:00"
+
+            },{
+                name:"开工报告",
+                url:"sadasdasdas",
+                TJdata:"2021/5/20",
+                JYdata:"2021/5/20/14:00"
+
+            }
+
+        ]
+
+        function adddataTreeHtml(dataTreeData){
+            let it = undefined;
+            let strHtml = '';
+            for (it of dataTreeData){
+                let str = '<div class="dataTreebox_center_itemBox"> <div class="dataTreebox_center_itemBox_L"> <i class="dataTreebox_center_itemBox_L_line"></i> <span style="width: 30px;height: 30px;background: green;border: 2px solid #fff;border-radius: 50%;"></span> <i class="dataTreebox_center_itemBox_L_line"></i> </div> <div class="dataTreebox_center_itemBox_R"> <div class="dataTreebox_center_item_head"> <div> <span>校验结果：通过</span> </div> </div> <div class="dataTreebox_center_item_foot dataTreebox_centerflex_betweeb"> <span class="dataTreebox_center_item_foot_Lsp">'+it.JYdata+'</span> <a href="'+it.url+'"><span class="dataTreebox_center_item_foot_Rsp" style="color: #37e80b;">下载</span></a> </div> </div> </div> <div class="dataTreebox_center_itemBox"> <div class="dataTreebox_center_itemBox_L"> <i class="dataTreebox_center_itemBox_L_line"></i> <span>'+it.TJdata+'</span> <i class="dataTreebox_center_itemBox_L_line"></i> </div> <div class="dataTreebox_center_itemBox_R"> <div class="dataTreebox_center_item_head"> <div> <span>开工报告5.0</span> </div> </div> <div class="dataTreebox_center_item_center"> 描述：这是一版测试这是一版测试这是一版测试这是一版测试这是一版测试这是一版测试这是一版测试这是一版测试这是一版测试这是一版测试这是一版测试这是一版测试这是一版测试这是一版测试这是一版测试这是一版测试这是一版测试这是一版测试 这是一版测试这是一版测试这是一版测试这是一版测试这是一版测试这是一版测试这是一版测试这是一版测试这是一版测试这是一版测试这是一版测试这是一版测试这是一版测试这是一版测试这是一版测试这是一版测试这是一版测试这是一版测试 这是一版测试这是一版测试这是一版测试这是一版测试这是一版测试这是一版测试这是一版测试这是一版测试这是一版测试这是一版测试这是一版测试这是一版测试这是一版测试这是一版测试这是一版测试这是一版测试这是一版测试这是一版测试 这是一版测试这是一版测试这是一版测试这是一版测试这是一版测试这是一版测试这是一版测试这是一版测试这是一版测试这是一版测试这是一版测试这是一版测试这是一版测试这是一版测试这是一版测试这是一版测试这是一版测试这是一版测试 这是一版测试这是一版测试这是一版测试这是一版测试这是一版测试这是一版测试这是一版测试这是一版测试这是一版测试这是一版测试这是一版测试这是一版测试这是一版测试这是一版测试这是一版测试这是一版测试这是一版测试这是一版测试 这是一版测试这是一版测试这是一版测试这是一版测试这是一版测试这是一版测试这是一版测试这是一版测试这是一版测试这是一版测试这是一版测试这是一版测试这是一版测试这是一版测试这是一版测试这是一版测试这是一版测试这是一版测试 这是一版测试这是一版测试这是一版测试这是一版测试这是一版测试这是一版测试这是一版测试这是一版测试这是一版测试这是一版测试这是一版测试这是一版测试这是一版测试这是一版测试这是一版测试这是一版测试这是一版测试这是一版测试 </div> <div class="dataTreebox_center_item_foot dataTreebox_centerflex_end"> <span class="dataTreebox_center_item_foot_Rsp" style="color: orange;"></span> </div> </div> </div>';
+                strHtml += str;
+            };
+            $("#dataTreebox_centerID").append(strHtml);
+        }
+
+        
+
+
+    </script>
+</body>
+</html>

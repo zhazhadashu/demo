@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <style>
+        html,body{
+            height: 100%;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* .loginhtml{
+            width: 100%;
+            height: 100%;
+            background: url(./png/login_background.jpg) center center no-repeat;
+            background-size: 100% 100%;
+            position: relative;
+            color: #fff;
+        }
+        .loginBox{
+            position: absolute;
+            height: 70%;
+            width: 100%;
+            top: 15%;
+            display: flex;
+            flex-direction: column;
+        }
+
+
+        .loginBox_head{
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            font-size: 30px;
+            line-height: 40px;
+            margin-bottom: 20px;
+        }
+        .loginBox_head i{
+            height: 50%;
+            border-bottom: 1px solid #fff;
+            width: 20%;
+            margin: 0 10px;
+        }
+
+
+
+
+
+        .loginBox_center{
+            background:rgba(144, 144, 187, .5);
+            flex: 1;
+            display: flex;
+        }
+        .loginBox_center_left{
+            width: 60%;
+
+        }
+        .loginBox_center_right{
+            flex: 1;
+            display: flex;
+            align-items: center;
+            height: 100%;
+        }
+        .loginform{
+            height: 70%;
+            background: #0f4176;
+            width: 275px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .login_inputBox{
+            margin-top: 10px;
+            background: #fff;
+            border-radius: 5px;
+        }
+        .login_input{
+            color: #fff;
+            border: 0;
+            outline: none;
+            height: 24px;
+            font-size: 16px;
+            background: transparent;
+        }
+
+
+
+        .loginBox_foot{
+            height: 120px;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+        } */
+    </style>
+    <style>
+        .loginhtml{
+            background: url(./png/beijing1.png) center center no-repeat;
+            background-size: 100% 100%;
+            position: relative;
+            height: 100%;
+            width: 100%;
+        }
+        .loginhtml_bgtop{
+            background: url(./png/beijing1_top.png) center center no-repeat;
+            background-size: 100% 100%;
+            position: absolute;
+            top: -30px;
+            height: 80%;
+            width: 100%;
+        }
+        .loginhtml_bgdown{
+            background: url(./png/diandian.png) center center no-repeat;
+            background-size: 100% 100%;
+            position: absolute;
+            bottom: 0px;
+            height: 50%;
+            width: 100%;
+        }
+        .loginhtml_bgqiu{
+            background: url(./png/qiuti.png) center center no-repeat;
+            background-size: 100% 100%;
+            position: absolute;
+            z-index: 1;
+            top: 16%;
+            left: 18%;
+            height: 700px;
+            width: 700px;
+        }
+
+        .loginhtml_bgqiu_txt{
+            background: url(./png/kaung1.png) center center no-repeat;
+            background-size: 100% 100%;
+            position: absolute;
+            left: -10%;
+            height: 700px;
+            width: 800px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+            color: #fff;
+            font-weight: bold;
+        }
+
+
+        .loginBox{
+            position: absolute;
+            background: url(./png/loginbox.png) center center no-repeat;
+            background-size: 100% 100%;
+            padding: 35px 30px;
+            box-sizing: border-box;
+            right: 23%;
+            top: 41%;
+            color: #fff;
+        }
+        .loginform{
+            margin: 10px 0px;
+        }
+        .loginbtn{
+            height: 40px;
+            width: 100%;
+            background-color: rgb(0, 137, 248);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px 0px;
+            font-size: 14px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="loginhtml">
+        <div class="loginBox">
+            <div class="loginBox_head">
+                <i></i>
+                <span>输变电数字化移交系统</span>
+                <i></i>
+            </div>
+            <div class="loginBox_center">
+                <div class="loginBox_center_left"></div>
+                <div class="loginBox_center_right">
+                    <div class="loginform">
+                        <div class="loginform_head">
+                            <span>账号登录</span>
+                        </div>
+                        <div class="loginform_center">
+                            <div class="login_inputBox">
+                                <span><i></i>账户：</span>
+                                <input class="login_input" type="text" placeholder="请输入账户">
+                            </div>
+                            <div class="login_inputBox">
+                                <span><i></i>密码：</span>
+                                <input class="login_input" type="text" placeholder="请输入密码">
+                            </div>
+                        </div>
+                        <div class="loginform_foot">
+                            <span class="loginBtn">登录</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="loginBox_foot">
+                <span>版权所有</span>
+            </div>
+        </div>
+    </div> -->
+    
+
+    <div class="loginhtml">
+        <div class="loginhtml_bgtop"></div>
+        <div class="loginhtml_bgdown"></div>
+        <div class="loginhtml_bgqiu">
+            <div class="loginhtml_bgqiu_txt">
+                <span>一键式移交系统</span>
+            </div>
+        </div>
+
+        <div class="loginBox">
+            <div>账号登录</div>
+            <div>
+                <div class="loginform">
+                    <span>账户</span>
+                    <input type="text">
+                </div>
+                <div class="loginform">
+                    <span>密码</span>
+                    <input type="text">
+                </div>
+            </div>
+            <div>
+                <div>
+                    <input type="checkbox">
+                    <span>记住密码</span>
+                </div>
+            </div>
+            <div>
+                <div class="loginbtn">登录</div>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts@4/dist/echarts.min.js"></script>
+
+
+    <style>
+        html,body{
+            padding: 0;
+            margin: 0;
+        }
+        .box{
+            width: 900px;
+            height: 900px;
+            background-color: #666;
+            display: flex;
+            flex-direction: column;
+        }
+        .box_head{
+            height: 20%;
+            width: 100%;
+            background-color: #333;
+        }
+        .iframe{
+            flex:1
+        }
+        .box_foot{
+            height: 20%;
+            width: 100%;
+            background-color: #333;
+        }
+    </style>
+</head>
+
+
+
+<body>
+    <div class="box">
+        <div class="box_head"></div>
+        <iframe class="iframe" src="./img/test.pdf" frameborder="0"></iframe>
+        <div class="box_foot"></div>
+    </div>
+    
+</body>
+</html>

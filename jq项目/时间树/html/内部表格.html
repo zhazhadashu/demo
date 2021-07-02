@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <style>
+        #box{
+            width: 1267px;
+            height: 480px;
+            overflow-x: hidden;
+        }
+        .zs_attictableBox{
+            width: 100%;
+            /* 不需要高度 */
+            background-color: rgba(13, 11, 141, 0.842);
+            font-size: 14px;
+            color: #fff;
+        }
+        .zs_attictableTableBox{
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .zs_attictableTableBox,.zs_attictableTableBox tr th, .zs_attictableTableBox tr td { border:1px solid #0094ff; }
+        .zs_attictabletitleBox{
+            height: 50px;color: #fff;font-size: 14px;font-weight: bold;display: flex;position: relative;width: 100%;
+        }
+        .zs_attictabletitle_txt{
+            flex: 1;display: flex;justify-content: center;align-items: center;
+        }
+        .zs_attictabletitle_down{
+            position: absolute;right: 2%;top: 39%;
+        }
+
+        .zs_attictableBox span{
+            word-break: break-all;
+        }
+
+        .zs_attictableTableBox td{
+            box-sizing: border-box;
+            padding: 10px;
+            text-align: center;
+        }
+        .zs_attictableTableBox input{
+            width: 50%;
+            border: 1px solid transparent;
+            background-color: transparent;
+            color: #fff;
+            
+        }
+        .zs_attictableTable_th{
+            height: 30px;
+        }
+        .zs_attictableTable_tr{
+            height: 30px;
+        }
+        .zs_attictableTable_td1{
+            width: 25%;
+        }
+        .zs_attictableTable_td2{
+            width: 25%;
+        }
+        .zs_attictableTable_td3{
+            width: 25%;
+        }
+        .zs_attictableTable_td4{
+            width: 25%;
+        }
+    </style>
+</head>
+<body>
+    <div id="box"></div>
+     <!-- <div id="zs_attictableBoxID" class="zs_attictableBox">
+         <div class="zs_attictabletitleBox">
+             <div id="zs_attictabletitle_txtID" class="zs_attictabletitle_txt">设备实物ID表</div>
+             <div id="zs_attictabletitle_downID" class="zs_attictabletitle_down">下载</div>
+         </div>
+         <table id="zs_attictableTableBoxID" class="zs_attictableTableBox">
+             <tr class="zs_attictableTable_th">
+                 <th class="zs_attictableTable_td1">设备名称</th>
+                 <th class="zs_attictableTable_td2">实物id</th>
+                 <th class="zs_attictableTable_td3">设备模型id</th>
+                 <th class="zs_attictableTable_td4">设备站房</th>
+             </tr>
+             <tr class="zs_attictableTable_tr">
+                 <td class="zs_attictableTable_td1"><span>主变1</span></td>
+                 <td class="zs_attictableTable_td2"><span>asdsabdsaudbasdbasdbuasbuabdaushbdasbduabduasbdasubdausbdas</span></td>
+                 <td class="zs_attictableTable_td3"><span>551515151151552525154545115151515151515151525252525151515151515152552525</span></td>
+                 <td class="zs_attictableTable_td4"><span>515151515151151das15d1asdasdasdasdasd1as5d1a5s1d5as1d51a5sd15as1d5as15d1sa5d15sa</span></td>
+             </tr>
+         </table>
+     </div> -->
+
+
+
+
+     <script>
+         addZS_tableHtml(zs_attDATATEST,"box");
+         var zs_attDATATEST=[{
+             titlename:"设备实物ID表",
+             type:"pyID",
+             Option:[
+             {name:"主变1",objid:"12121551",pyhicid:"115dx1544x15sa15x15",homeid:"赤松"},
+             {name:"主变2",objid:"12121551",pyhicid:"115dx1544x15sa15x15",homeid:"赤松"},
+             {name:"端子箱1",objid:"12121551",pyhicid:"115dx1544x15sa15x15",homeid:"赤松"},
+             {name:"端子箱2",objid:"12121551",pyhicid:"115dx1544x15sa15x15",homeid:"赤松"},
+             {name:"端子箱3",objid:"12121551",pyhicid:"115dx1544x15sa15x15",homeid:"赤松"},
+             {name:"母线1",objid:"12121551",pyhicid:"115dx1544x15sa15x15",homeid:"赤松"},
+             {name:"母线2",objid:"12121551",pyhicid:"115dx1544x15sa15x15",homeid:"赤松"},
+             {name:"母线3",objid:"12121551",pyhicid:"115dx1544x15sa15x15",homeid:"赤松"},
+             {name:"母线4",objid:"12121551",pyhicid:"115dx1544x15sa15x15",homeid:"赤松"},
+             {name:"隔离开关柜1",objid:"12121551",pyhicid:"115dx1544x15sa15x15",homeid:"赤松"},
+             {name:"隔离开关柜2",objid:"12121551",pyhicid:"115dx1544x15sa15x15",homeid:"赤松"},
+             {name:"隔离开关柜3",objid:"12121551",pyhicid:"115dx1544x15sa15x15",homeid:"赤松"},
+             {name:"隔离开关柜4",objid:"12121551",pyhicid:"115dx1544x15sa15x15",homeid:"赤松"},
+             {name:"隔离开关柜5",objid:"12121551",pyhicid:"115dx1544x15sa15x15",homeid:"赤松"},
+             {name:"隔离开关柜6",objid:"12121551",pyhicid:"115dx1544x15sa15x15",homeid:"赤松"},
+         ]
+         },{ titlename:"台账信息参数表",
+             type:"PMS",
+             Option:[
+             {name:"主变1",objid:"12121551",pyhicid:"115dx1544x15sa15x15",homeid:"赤松"},
+             {name:"主变2",objid:"12121551",pyhicid:"115dx1544x15sa15x15",homeid:"赤松"},
+             {name:"端子箱1",objid:"12121551",pyhicid:"115dx1544x15sa15x15",homeid:"赤松"},
+             {name:"端子箱2",objid:"12121551",pyhicid:"115dx1544x15sa15x15",homeid:"赤松"},
+             {name:"端子箱3",objid:"12121551",pyhicid:"115dx1544x15sa15x15",homeid:"赤松"},
+             {name:"母线1",objid:"12121551",pyhicid:"115dx1544x15sa15x15",homeid:"赤松"},
+             {name:"母线2",objid:"12121551",pyhicid:"115dx1544x15sa15x15",homeid:"赤松"},
+             {name:"母线3",objid:"12121551",pyhicid:"115dx1544x15sa15x15",homeid:"赤松"},
+             {name:"母线4",objid:"12121551",pyhicid:"115dx1544x15sa15x15",homeid:"赤松"},
+             {name:"隔离开关柜1",objid:"12121551",pyhicid:"115dx1544x15sa15x15",homeid:"赤松"},
+             {name:"隔离开关柜2",objid:"12121551",pyhicid:"115dx1544x15sa15x15",homeid:"赤松"},
+             {name:"隔离开关柜3",objid:"12121551",pyhicid:"115dx1544x15sa15x15",homeid:"赤松"},
+             {name:"隔离开关柜4",objid:"12121551",pyhicid:"115dx1544x15sa15x15",homeid:"赤松"},
+             {name:"隔离开关柜5",objid:"12121551",pyhicid:"115dx1544x15sa15x15",homeid:"赤松"},
+             {name:"隔离开关柜6",objid:"12121551",pyhicid:"115dx1544x15sa15x15",homeid:"赤松"},
+         ]}]
+         
+         
+         function addZS_tableHtml(data,box){
+             let ele = $("#"+box)
+             ele.empty();
+            for(let it of data){
+                let str = '<div id="zs_attictableBoxID'+it.type+'" class="zs_attictableBox"></div>'
+                ele.append(str);
+                let strtitle = '<div class="zs_attictabletitleBox"> <div id="zs_attictabletitle_txtID" class="zs_attictabletitle_txt">'+it.titlename+'</div> <div id="zs_attictabletitle_downID" class="zs_attictabletitle_down">下载</div> </div>'
+                $("#zs_attictableBoxID"+it.type).append(strtitle);
+                //添加不同的模板
+                if(true){
+                    let ittArr = it.Option;
+                    let itemstr = '<table id="zs_attictableTableBoxID'+it.type+'" class="zs_attictableTableBox"> <tr class="zs_attictableTable_th"> <th class="zs_attictableTable_td1">设备名称</th> <th class="zs_attictableTable_td2">实物id</th> <th class="zs_attictableTable_td3">设备模型id</th> <th class="zs_attictableTable_td4">设备站房</th> </tr> </table>'
+                    $("#zs_attictableBoxID"+it.type).append(itemstr);
+                    for(let itt of ittArr){
+                        let strtr ='<tr class="zs_attictableTable_tr"> <td class="zs_attictableTable_td1"><span>'+itt.name+'</span></td> <td class="zs_attictableTable_td2"><span>'+itt.pyhicid+'</span></td> <td class="zs_attictableTable_td3"><span>'+itt.objid+'</span></td> <td class="zs_attictableTable_td4"><span>'+itt.homeid+'</span></td> </tr>'
+                        $("#zs_attictableTableBoxID"+it.type).append(strtr);
+                    }
+                }
+                
+            }
+         }
+        
+
+     </script>
+</body>
+</html>
